@@ -60,7 +60,6 @@ const readWithId: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (
       data: response.data,
     });
   } catch (err) {
-    console.log(err);
     if (err.response.status === 404)
       return formatJSONResponse(404, {
         message: 'Not Found',
@@ -81,11 +80,10 @@ const readWithId: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (
       return formatJSONResponse(400, {
         message: 'Invalid parameter <context>',
       });
-    // else
-
-    return formatJSONResponse(500, {
-      message: 'Internal Server Error',
-    });
+    else
+      return formatJSONResponse(500, {
+        message: 'Internal Server Error',
+      });
   }
 };
 
