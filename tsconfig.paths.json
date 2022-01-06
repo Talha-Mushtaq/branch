@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "inlineSources": true,
+    "esModuleInterop": true,
+    "sourceRoot": "/",
+    "baseUrl": "./",
+    "paths": {
+      "@functions/*": ["src/functions/*"],
+      "@libs/*": ["src/libs/*"],
+      "@tests/*": [
+        "tests/*"
+      ]
+    }
+  }
+}
