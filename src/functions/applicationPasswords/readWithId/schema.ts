@@ -1,8 +1,9 @@
 export default {
-  type: "object",
+  type: 'object',
   properties: {
-    name: { type: 'string' }
+    userId: { type: 'string' },
+    context: { type: 'string' },
   },
- //required: ['name']
-   required: []
+  //required: ['name']
+  required: [],
 } as const;
