@@ -1,9 +1,10 @@
 export default {
-  type: "object",
+  type: 'object',
   properties: {
-    name: { type: 'string' }
+    userId: { type: 'string' },
+    name: { type: 'string' },
+    app_id: { type: 'string' },
   },
   //required: ['name']
-  required: []
-
+  required: [],
 } as const;

@@ -10,17 +10,17 @@ export default {
         path: 'createApplicationPassword',
         request: {
           schema: {
-            'application/json': schema
+            'application/json': schema,
           },
           parameters: {
             querystrings: {
               username: true,
               password: true,
               url: true,
-            }
-          }
-        }
-      }
-    }
-  ]
-}
+            },
+          },
+        },
+      },
+    },
+  ],
+};
